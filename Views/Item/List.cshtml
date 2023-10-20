@@ -1,0 +1,14 @@
+@model Projeto.ViewModel.ItemListViewModel
+@{
+    ViewData["Title"] = "Cardapio";
+}
+
+<h1>@Model.CategoriaAtual</h1>
+<div class="container">
+    <div class="row">
+        @foreach (var item in Model.Itens)
+        {
+            <partial name="_Card" for="@item"></partial>
+        }
+    </div>
+</div>

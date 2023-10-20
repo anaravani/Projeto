@@ -1,0 +1,12 @@
+﻿@model Projeto.ViewModel.HomeViewModel
+@{
+    ViewData["Title"] = "Cardapio";
+}
+<partial name="_Carousel" />
+<h1>Itens em Destaque</h1>
+<div class="row">
+    @foreach (var item in Model.ItensEmDestaque)
+    {
+        <partial name="_Card" for="@item"></partial>
+    }
+</div>
