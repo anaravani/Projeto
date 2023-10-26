@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Projeto.Context;
 
@@ -10,9 +11,11 @@ using Projeto.Context;
 namespace Projeto.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20231020132310_identity")]
+    partial class identity
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "7.0.12");
@@ -228,100 +231,6 @@ namespace Projeto.Migrations
                     b.ToTable("Itens");
                 });
 
-            modelBuilder.Entity("Projeto.Models.Pedido", b =>
-                {
-                    b.Property<int>("PedidoId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
-
-                    b.Property<string>("Bairro")
-                        .HasMaxLength(30)
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Cep")
-                        .IsRequired()
-                        .HasMaxLength(10)
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Cidade")
-                        .HasMaxLength(50)
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Endereco1")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Endereco2")
-                        .HasMaxLength(100)
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Estado")
-                        .HasMaxLength(10)
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Nome")
-                        .IsRequired()
-                        .HasMaxLength(80)
-                        .HasColumnType("TEXT");
-
-                    b.Property<int>("Numero")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<DateTime>("PedidoEnviado")
-                        .HasColumnType("TEXT");
-
-                    b.Property<DateTime>("PedidoEnviadoEm")
-                        .HasColumnType("TEXT");
-
-                    b.Property<decimal>("PedidoTotal")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<string>("Telefone")
-                        .IsRequired()
-                        .HasMaxLength(25)
-                        .HasColumnType("TEXT");
-
-                    b.Property<int>("TotalItensPedido")
-                        .HasColumnType("INTEGER");
-
-                    b.HasKey("PedidoId");
-
-                    b.ToTable("Pedidos");
-                });
-
-            modelBuilder.Entity("Projeto.Models.PedidoItem", b =>
-                {
-                    b.Property<int>("PedidoItemId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int>("ItemId")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int>("PedidoId")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<decimal>("Preco")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<int>("Quantidade")
-                        .HasColumnType("INTEGER");
-
-                    b.HasKey("PedidoItemId");
-
-                    b.HasIndex("ItemId");
-
-                    b.HasIndex("PedidoId");
-
-                    b.ToTable("PedidoItens");
-                });
-
             modelBuilder.Entity("Projeto.Models.UserAcount", b =>
                 {
                     b.Property<string>("Id")
@@ -478,33 +387,9 @@ namespace Projeto.Migrations
                     b.Navigation("Categoria");
                 });
 
-            modelBuilder.Entity("Projeto.Models.PedidoItem", b =>
-                {
-                    b.HasOne("Projeto.Models.Item", "Item")
-                        .WithMany()
-                        .HasForeignKey("ItemId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Projeto.Models.Pedido", "Pedido")
-                        .WithMany("PedidoItens")
-                        .HasForeignKey("PedidoId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Item");
-
-                    b.Navigation("Pedido");
-                });
-
             modelBuilder.Entity("Projeto.Models.Categoria", b =>
                 {
                     b.Navigation("Itens");
-                });
-
-            modelBuilder.Entity("Projeto.Models.Pedido", b =>
-                {
-                    b.Navigation("PedidoItens");
                 });
 #pragma warning restore 612, 618
         }
