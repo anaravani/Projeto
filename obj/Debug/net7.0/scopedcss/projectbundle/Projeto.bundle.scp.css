@@ -58,7 +58,7 @@ a.navbar-brand[b-s2go3x8bzm] {
 }
 
 a[b-s2go3x8bzm] {
-  color: #0077cc;
+  color: #ff006a;
 }
 
 .btn-primary[b-s2go3x8bzm] {
@@ -81,7 +81,7 @@ a[b-s2go3x8bzm] {
 }
 
 .box-shadow[b-s2go3x8bzm] {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+  box-shadow: 0 .25rem .75rem rgba(255, 255, 255, 0);
 }
 
 button.accept-policy[b-s2go3x8bzm] {
@@ -95,4 +95,5 @@ button.accept-policy[b-s2go3x8bzm] {
   width: 100%;
   white-space: nowrap;
   line-height: 60px;
+  background-color:#0b581a ;
 }

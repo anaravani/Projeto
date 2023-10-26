@@ -6,7 +6,7 @@ namespace Projeto.Models
     {
         public int CategoriaId {get; set;}
         [Display(Name = " Nome da Categoria")]
-        [Required(ErrorMessage = "Informe onome da categoria")]
+        [Required(ErrorMessage = "Informe o nome da categoria")]
         public string Nome {get; set;}
         public List<Item> Itens {get; set;}
     }

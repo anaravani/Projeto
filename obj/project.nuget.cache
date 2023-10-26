@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LShw/pTSimFAr1GEqNWj5U1xUW/Xg4WBbCRN9/5ulNPemFTH1JuSLGcobTUMWYld2U5wRaXTjhIb7IgLNSo/uA==",
+  "dgSpecHash": "iH7s8Rz3Sc8HAAWUkwvek/Ixess+0pJh35XzhAvlGirBuCHIvRNiTenHMDmJD46nw3CTuRYZoN7hJ00HbZz+cw==",
   "success": true,
-  "projectFilePath": "C:\\DEV\\Projeto\\Projeto.csproj",
+  "projectFilePath": "C:\\Dev\\Projeto\\Projeto.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Aluno Dev\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Aluno Dev\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
