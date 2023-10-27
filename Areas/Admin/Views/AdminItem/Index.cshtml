@@ -58,10 +58,11 @@
                 @Html.DisplayFor(modelItem => item.Preco)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.ImagemPequenaUrl)
+                <img src="@Html.DisplayFor(modelItem => item.ImagemPequenaUrl)" width="100px">
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.ImagemUrl)
+                <img src=" @Html.DisplayFor(modelItem => item.ImagemUrl)" width="100px">
+               
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Ativo)

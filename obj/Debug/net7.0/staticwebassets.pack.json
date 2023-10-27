@@ -13,6 +13,18 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Dev\\Projeto\\wwwroot\\img\\card1.jpg",
+      "PackagePath": "staticwebassets\\img\\card1.jpg"
+    },
+    {
+      "Id": "C:\\Dev\\Projeto\\wwwroot\\img\\card2.jpg",
+      "PackagePath": "staticwebassets\\img\\card2.jpg"
+    },
+    {
+      "Id": "C:\\Dev\\Projeto\\wwwroot\\img\\card3.jpg",
+      "PackagePath": "staticwebassets\\img\\card3.jpg"
+    },
+    {
       "Id": "C:\\Dev\\Projeto\\wwwroot\\img\\japones.jpg",
       "PackagePath": "staticwebassets\\img\\japones.jpg"
     },

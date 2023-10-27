@@ -1,6 +1,6 @@
 
-
- <div class="card text-center col text-white verdemusgo"> <img src="@Model.ImagemPequenaUrl" class="card-img-top" alt="...">
+<div class="col">
+ <div class="card text-center col text-white verdemusgo h-100"> <img src="@Model.ImagemPequenaUrl" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">  <a class="text-white" asp-controller="Item" asp-action="Details" asp-route-itemId="@Model.ItemId">@Model.Nome</a></h5>
                 <h6 class="card-subtitle"> @Model.Preco.ToString("c")</h6>
@@ -13,4 +13,4 @@
    
             </div>
         </div>
-  
+</div>  
