@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="utf-8" />
@@ -18,24 +18,46 @@
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Projeto</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img src="~/img/logo.png"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" asp-area="Admin" asp-controller="AdminCategoria" asp-action="Index">Categoria</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" asp-area="Admin" asp-controller="AdminItem" asp-action="Index">Item</a>
-                        </li>
-                    </ul>
-                </div>
+                    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img
+                            src="~/img/logo.png"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                        <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link text-white" asp-area="" asp-controller="Home"
+                                    asp-action="Index">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" asp-area="Admin" asp-controller="AdminCategoria"
+                                    asp-action="Index">Categoria</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" asp-area="Admin" asp-controller="AdminItem"
+                                    asp-action="Index">Item</a>
+                            </li>
+                            <li class="nav-item">
+
+                                <a class="nav-link text-dark" asp- area="Admin" asp-controller="AdminRelatorioVendas"
+                                    asp- action="Index">Relatório vendas</a>
+
+                            </li>
+                            <li class="nav-item">
+
+                                <a class="nav-link text-dark" asp- area="Admin" asp-controller="AdminXml"
+                                    asp-action="Index">Exportarxml</a>
+                            </li>
+                            <li class="nav-item">
+
+                                <a class="nav-link text-dark" asp- area="Admin" asp-controller="AdminPedido"
+                                    asp-action="Index">Pedidos</a>
+
+                            </li>
+                        </ul>
+                    </div>
             </div>
         </nav>
     </header>
@@ -50,34 +72,34 @@
         <div class="container-fluid  verdemusgo text-white p-4">
 
             <div class="row">
-            <div class="col-md-3">
-                <h5><i class="bi bi-geo-alt"></i>Local</h5>
-                <p>Rua do Caju
-                    N°: 115</p>
+                <div class="col-md-3">
+                    <h5><i class="bi bi-geo-alt"></i>Local</h5>
+                    <p>Rua do Caju
+                        N°: 115</p>
 
-            </div>
+                </div>
 
-            <div class="col-md-3">
-                <h5><i class="bi bi-telephone"></i>Reservas</h5>
-                <p>Tel: (18) 97595859
-                    E-mail: defree@gmail.com</p>
+                <div class="col-md-3">
+                    <h5><i class="bi bi-telephone"></i>Reservas</h5>
+                    <p>Tel: (18) 97595859
+                        E-mail: defree@gmail.com</p>
 
-            </div>
+                </div>
 
-            <div class="col-md-3">
-                <h5><i class="bi bi-alarm"></i>Aberto</h5>
-                <p>Variados de cada restaurante</p>
+                <div class="col-md-3">
+                    <h5><i class="bi bi-alarm"></i>Aberto</h5>
+                    <p>Variados de cada restaurante</p>
 
-            </div>
+                </div>
 
-            <div class="col-md-3 d-flex justify-content-center align-items-center gap-3">
+                <div class="col-md-3 d-flex justify-content-center align-items-center gap-3">
 
-                <i class="bi bi-twitter"></i>
-                <i class="bi bi-facebook"></i>
-                <i class="bi bi-instagram"></i>
-                <i class="bi bi-linkedin"></i>
+                    <i class="bi bi-twitter"></i>
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-instagram"></i>
+                    <i class="bi bi-linkedin"></i>
 
-            </div>
+                </div>
             </div>
         </div>
     </footer>

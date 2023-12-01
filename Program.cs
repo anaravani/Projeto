@@ -1,14 +1,22 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Projeto.Areas.Admin.Services;
 using Projeto.Context;
 using Projeto.Models;
 using Projeto.Repositories;
 using Projeto.Repositories.Interfaces;
 using Projeto.Services;
+using ReflectionIT.Mvc.Paging;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddPaging(options => {
+options.ViewName = "Bootstrap5";
+options.PageParameterName = "pageindex";
+});
+builder.Services.AddScoped<RelatorioVendasServices>();
+builder.Services.Configure<ConfiguraImagem>(builder.Configuration.GetSection("ConfImagemItem"));
 builder.Services.AddTransient<IPedidoRepository, PedidoRepository>();
 builder.Services.AddScoped<IUserRoleInicial, UserRoleInicial>();
 builder.Services.AddIdentity<UserAcount, IdentityRole>().AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders();
